@@ -5,7 +5,7 @@ app.use(express.static('public'));
 
 function rnGreeting() {
   var arr = ["hei", "hello", "halla"];
-  var greeting = arr[Math.round(Math.random() * 3)];
+  var greeting = arr[Math.floor(Math.random() * 3)];
 
   return greeting;
 }
