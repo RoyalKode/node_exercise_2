@@ -11,5 +11,9 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RoyalKode/node_exercise_2_v2"
   }
 }
