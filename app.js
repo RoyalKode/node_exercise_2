@@ -14,6 +14,6 @@ app.get('/gr/:name', function(req, res) {
   res.send(rnGreeting() + " " + req.params.name)
 })
 
-app.listen(8080, function(){
-  console.log('Server Started on Port 8080...');
-})
+app.listen(process.env.PORT || 3000, function(){
+  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+});
